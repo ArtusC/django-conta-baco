@@ -1,12 +1,12 @@
-ExercÌcio pr·tico Nexxera
+Exerc√≠cio pr√°tico Nexxera
 
-Prova tÈcnica para programador Python com objtivo de uma criaÁ„o de uma conta virtual com as funÁıes de dÈbito, crÈdito e extrato utilizando o framework Django.
+Prova t√©cnica para programador Python com objtivo de uma cria√ß√£o de uma conta virtual com as fun√ß√µes de d√©bito, cr√©dito e extrato utilizando o framework Django.
 
 Para rodar o projeto:
 
-1) Baixar, via github, o prjeto desafioNex.
+1) Baixar, via github, o projeto.
 
-2) Extrair o projeto para o diretÛrio de sua preferÍncia.
+2) Extrair o projeto para o diret√≥rio de sua prefer√™ncia.
 
 3) Via CMD, acessar a pasta desafioNex" e criar o ambiente virtual com os comandos:
 python -m venv env
@@ -19,19 +19,19 @@ pip install djangorestframework
 5) Na pasta desafioNex\myapi, rodar o comando (via CMD) para iniciar o acesso ao server:
 python manage.py runserver
 
-6) Acessar a URL http://127.0.0.1:8000 para iniciar a aplicaÁ„o (preferencialmente via Google Chrome).
+6) Acessar a URL http://127.0.0.1:8000 para iniciar a aplica√ß√£o (preferencialmente via Google Chrome).
 
-7) A p·gina inicial contÈm os links de acesso aos objetios requeridos do projeto:
+7) A p√°gina inicial cont√©m os links de acesso aos objetios requeridos do projeto:
 
-* Link para acessar a fun„o de inserÁ„o dos dÈbitos, crÈditos e descriÁıes dos dÈbitos e 
-crÈditos no sistema:
+* Link para acessar a fun√£o de inser√ß√£o dos d√©bitos, cr√©ditos e descri√ß√µes dos d√©bitos e 
+cr√©ditos no sistema:
 http://127.0.0.1:8000/transacoes/
 
-* Link para acessar a fun„o de extrato (visualizaÁ„o do saldo inicial e final por transaÁ„o, podendo 
-filtrar a ordenaÁ„o por crÈdito ou dÈbito):
+* Link para acessar a fun√£o de extrato (visualiza√ß√£o do saldo inicial e final por transa√ß√£o, podendo 
+filtrar a ordena√ß√£o por cr√©dito ou d√©bito):
 http://127.0.0.1:8000/extrato/
 
-* Link para acessar a fun„o de saldo total (soma de todos os crÈditos menos a soma de todos os dÈbitos):
+* Link para acessar a fun√£o de saldo total (soma de todos os cr√©ditos menos a soma de todos os d√©bitos):
 http://127.0.0.1:8000/saldo/
 
 
