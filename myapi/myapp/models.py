@@ -9,21 +9,6 @@ class Transacoes(models.Model):
 		db_table = 'transacoes'
 
 	debito = models.DecimalField(max_digits=19, decimal_places=2)
+	descricao_debito = models.CharField(max_length=255)
 	credito = models.DecimalField(max_digits=19, decimal_places=2)
-
-	@property
-	def sum(self):
-		return float(self.debito) - float(self.credito)
-
-	saldoTrans = property(sum)
-
-
-class Saldo(models.Model):
-
-	class Meta:
-
-		db_table = 'saldo'
-
-	#saldo = Transacoes.sum()
-	#saldo = models.DecimalField(max_digits=19, decimal_places=2)
-	#saldo_data = models.DateTimeField(blank=True, null=True)
+	descricao_credito = models.CharField(max_length=255)

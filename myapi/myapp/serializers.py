@@ -1,12 +1,15 @@
 from rest_framework import serializers
-from .models import Saldo, Transacoes
+from .models import Transacoes
 
-class SaldoSerializer(serializers.ModelSerializer):
-	class Meta:
-		model = Saldo
-		fields = '__all__'
-
+#Serializer utilizado para o GET
 class TransacoesSerializer(serializers.ModelSerializer):
+	saldo = serializers.IntegerField()
 	class Meta:
 		model = Transacoes
-		fields = '__all__'
+		fields = ('credito', 'descricao_credito', 'debito', 'descricao_debito', 'saldo')
+
+#Serializer utilizado para o POST
+class DebCredSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = Transacoes
+		fields = ('credito', 'descricao_credito', 'debito', 'descricao_debito')		

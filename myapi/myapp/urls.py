@@ -11,11 +11,3 @@ urlpatterns = [
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
-
-
-'''
-urlpatterns = [
-    path('transacoes/', views.transacoes_list),
-    path('saldo/<int:pk>/', views.saldo_detail),
-]
-'''
